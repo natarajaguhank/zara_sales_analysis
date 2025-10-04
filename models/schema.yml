@@ -1,5 +1,13 @@
 version: 2
 
+sources:
+  - name: zara_sales
+    schema: dbt_nk
+    database: zara_sales_db
+    tables:
+      - name: zara_sales_raw
+
+
 models:
   - name: stg_zara_sales
     description: "Staging model for Zara raw sales data"
@@ -14,3 +22,6 @@ models:
       - name: sales_volume
         tests:
           - not_null
+
+  - name: mart_sales_summary
+    description: "Aggregated sales summary for Tableau dashboards"
