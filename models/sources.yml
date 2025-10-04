@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: zara_sales
+    database: ZARA_SALES_DB
+    schema: DBT_NK
+    tables:
+      - name: ZARA_SALES_RAW

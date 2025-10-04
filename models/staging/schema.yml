@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_zara_sales
+    description: "Staging model for Zara raw sales data"
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+          - unique
+      - name: price_standardized
+        tests:
+          - not_null
+      - name: sales_volume
+        tests:
+          - not_null
