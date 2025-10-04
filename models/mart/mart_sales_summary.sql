@@ -5,3 +5,4 @@ SELECT
     SUM(price_standardized * sales_volume) AS total_sales
 FROM {{ ref('stg_zara_sales') }}
 GROUP BY product_category, brand;
+ 
