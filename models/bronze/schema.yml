@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: bronze
+    schema: BRONZE
+    tables:
+      - name: price_paid_raw
