@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: price_paid_clean
+    columns:
+      - name: transaction_id
+        tests:
+          - not_null
+      - name: price
+        tests:
+          - not_null
+          - positive_values
+      - name: transfer_date
+        tests:
+          - not_null
